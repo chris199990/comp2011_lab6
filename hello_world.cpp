@@ -8,7 +8,16 @@ const int MAX_WIDTH=6;
 bool findUncoveredGrid(int board[][MAX_WIDTH], int height, int width, int& r_id, int& c_id){
     // to be completed
     //
-    return true;
+    for(int i = 0; i < height; ++i){
+        for(int j = 0; j < width; ++j){
+            if(board[i][j] == 0){
+                r_id = i;
+                c_id = j;
+                return true;
+            }
+        }
+    }
+    return false;
 }
 
 
@@ -16,6 +25,7 @@ int numberLayout(int board[][MAX_WIDTH], int height, int width){
     int result = 0;
     // to be completed
     //
+    
     return result;
 }
 
